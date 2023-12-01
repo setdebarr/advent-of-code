@@ -1,6 +1,6 @@
 fn main() {
-    let input: &str = include_str!("../input.txt");
-    println!("{}", solution(input));
+    let input = include_str!("../../input.txt");
+    println!("Answer: {}", solution(input));
 }
 
 fn solution(input: &str) -> i32 {
@@ -12,8 +12,6 @@ fn solution(input: &str) -> i32 {
             .map(|c| c.to_digit(10).unwrap_or(10))
             .filter(|n| *n != 10)
             .collect::<Vec<u32>>();
-
-        println!("{:?} ", test);
 
         let first = test.first().unwrap().to_string();
         let last = test.last().unwrap().to_string();

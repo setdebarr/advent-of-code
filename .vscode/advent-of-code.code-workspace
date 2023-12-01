@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "..",
+      "name": "AdventOfCode"
+    },
+    {
+      "path": "../2023/rust",
+      "name": "2023_Rust"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/2023/rust": true
+    }
+  }
+}
